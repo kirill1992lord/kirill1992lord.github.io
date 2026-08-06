@@ -1,0 +1,95 @@
+:root {
+  --bg: #121212;
+  --card-bg: #1e1e1e;
+  --text: #e0e0e0;
+  --accent: #bb86fc;
+  --border: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 320px;
+  text-align: center;
+}
+
+.avatar {
+  margin-bottom: 16px;
+}
+
+.avatar img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: var(--accent);
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.contacts a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.contacts a:hover {
+  color: var(--accent);
+}
+
+.about, .skills {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.about h2, .skills h2 {
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.about p {
+  line-height: 1.4;
+}
+
+.skills ul {
+  list-style: inside disc;
+}
+
+.skills li {
+  margin-bottom: 4px;
+}
